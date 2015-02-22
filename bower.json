@@ -2,6 +2,8 @@
   "name": "passing",
   "private": true,
   "dependencies": {
-    "jquery": "~1.11.1"
+    "jquery": "~1.11.1",
+    "bourbon": "~4.2.0",
+    "neat": "~1.7.1"
   }
 }

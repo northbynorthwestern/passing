@@ -1,0 +1,32 @@
+.slide {
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  padding-top: 2em;
+  background-color: rgb(38,38,38);
+
+  display: none;
+
+  &.active { display: block }
+
+
+  .bg-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    // background-repeat: no-repeat;
+    background-image: url('http://placekitten.com/1200/800');
+
+    &.blur {
+      filter: blur(10px) grayscale(100%);
+    }
+  }
+
+  .audio-player {
+    @extend %vertical-align;
+    background-color: transparentize(rgb(255,255,255),0.2);
+  }
+
+}
+

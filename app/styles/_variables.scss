@@ -1,0 +1,38 @@
+// Responsive-design Breakpoints
+$default-768: new-breakpoint(min-width 768px);
+$default-480: new-breakpoint(max-width 480px);
+
+// Colors
+$nbn-purple: rgb(80, 31, 132);
+$nbn-red: rgb(236, 56, 14);
+
+// Shades of Gray
+$black: rgb(0, 0, 0);
+$nbn-black: rgb(17, 17, 17);
+$bodytext-black: rgb(40, 40, 40);
+$text-gray: rgb(145, 145, 145);
+$line-gray: rgb(187, 187, 187);
+$border-gray: rgb(204, 204, 204);
+
+
+@mixin sans-serif {
+  font-family: Proxima-Nova, Helvetica, Arial, sans-serif;
+}
+
+%prose {
+  @include sans-serif;
+  color: $bodytext-black;
+  display: block;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: left;
+}
+
+%vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

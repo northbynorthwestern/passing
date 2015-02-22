@@ -1,0 +1,21 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+
+}
+
+.prose {
+  @extend %prose;
+}
+
+.content-wrapper {
+  @include outer-container();
+  // padding: 1em;
+}
+
+.row {
+  @include row();
+}
