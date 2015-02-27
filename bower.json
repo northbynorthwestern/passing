@@ -4,6 +4,8 @@
   "dependencies": {
     "jquery": "~1.11.1",
     "bourbon": "~4.2.0",
-    "neat": "~1.7.1"
+    "neat": "~1.7.1",
+    "jplayer": "~2.9.2",
+    "fontawesome": "~4.3.0"
   }
 }

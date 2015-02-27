@@ -14,6 +14,8 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/jplayer/dist/skin/pink.flag/jplayer.pink.flag.css" />
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -31,18 +33,36 @@
       </div>
     </header>
 
-    <div class="buttons">
-      <div class="previous"></div>
-      <div class="next"></div>
+    <div class="arrows">
+      <a href="#" class="arrow previous">
+        <div class="icon icon-left-small"></div>
+      </a>
+      <a href="#" class="arrow next">
+        <div class="icon icon-right-small"></div>
+      </a>
     </div>
 
-    <section class="slide title">
+    <div class="audio-player">
+      <div id="jp_container" class="jp-audio">
+        <div class="controls">
+          <a href="javascript:;" class="play player-button" tabindex="1" title="play"><span class="icon-play"></span></a>
+          <a href="javascript:;" class="pause player-button" tabindex="1" style="display: none;" title="pause"><span class="icon-pause"></span></a>
+        </div>
+        <div class="photo-credit">
+          <span class="name">John Smith</span>
+          <span class="year">Freshman</span></br>
+          <span class="credit">Photographer / North by Northwestern</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="slide title active">
       <div class="content-wrapper row">
         <h1>Pass&middot;ing</h1>
         <h3 class="byline">By Sarah Turbin</h3>
         <h3 class="byline">Design and Development by Alex Duner</h3>
         <h3 class="byline"><time>Feb. 22, 2015</time></h3>
-        <p class="definition prose"><span class="unicode">\ˈpa:siŋ\</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam labore beatae nam fuga inventore iste quia esse, eos totam laboriosam.</p>
+        <p class="definition prose"><span class="unicode">\ˈpa:siŋ\</span>To be accepted as or believed to be, or to represent oneself successfully as, a member of an ethnic or religious group other than one's own, esp. one having higher social status; spec. (of a person of black ancestry in a racially segregated society) to be accepted as white.</p>
         <div class="prose">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae qui, sit a provident aliquam reiciendis? Accusantium dolorum ratione repellendus iusto consequatur quod magni nesciunt, explicabo eius praesentium pariatur. Sunt, a.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo perspiciatis autem facilis hic minima incidunt atque quidem soluta magni tempora! Magnam perferendis, consequatur quod neque aspernatur voluptatibus. Quaerat impedit alias autem labore accusamus dolor animi inventore vitae quod illo, deleniti, et maiores libero saepe, neque ea delectus laudantium mollitia quos consequuntur nulla accusantium ad incidunt. Minus assumenda tenetur incidunt! Cupiditate.</p>
@@ -53,28 +73,29 @@
       </div>
     </section>
 
-    <section class="slide active" id="a">
-      <div class="bg-img"></div>
-      <div class="audio-player">
-      </div>
-      <div class="image-credit">
-        <span class="name">John Smith</span>
-        <span class="year">Freshman</span>
-        <span class="credit">Photographer / North by Northwestern</span>
-      </div>
+    <section class="slide" id="mande" data-audiourl="http://media.northbynorthwestern.com.s3.amazonaws.com/uploads/2015/02/25/Mande_whitepassing.mp3">
+      <div class="bg-img blur"></div>
+      <div class="wrapper"></div>
     </section>
 
-    <section class="slide" id="b">
-
+    <section class="slide" id="elvira" data-audiourl="http://media.northbynorthwestern.com.s3.amazonaws.com/uploads/2015/02/25/Elvira_whitepassing.mp3">
+      <div class="bg-img blur"></div>
+      <div class="wrapper"></div>
     </section>
 
+    <section class="slide" id="aaron" data-audiourl="http://media.northbynorthwestern.com.s3.amazonaws.com/uploads/2015/02/25/Aaron_whitepassing.mp3">
+      <div class="bg-img blur"></div>
+    </section>
 
-
+    <section class="slide" id="rachel" data-audiourl="http://media.northbynorthwestern.com.s3.amazonaws.com/uploads/2015/02/25/Rachel_whitepassing.mp3">
+      <div class="bg-img blur"></div>
+    </section>
 
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jplayer/dist/jplayer/jquery.jplayer.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

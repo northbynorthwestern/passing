@@ -2,30 +2,58 @@
   height: 100vh;
   width: 100%;
   padding: 0;
-  padding-top: 2em;
   background-color: rgb(38,38,38);
+  z-index: 5;
 
   display: none;
+
+  &#elvira .bg-img { background: url('/images/elvira_smaller.jpg');}
+  &#mande .bg-img { background: url('/images/mande_smaller.jpg');}
+  &#rachel .bg-img { background: url('/images/rachel_smaller.jpg');}
+  &#aaron .bg-img { background: url('/images/aaron_smaller.jpg');}
 
   &.active { display: block }
 
 
   .bg-img {
+    @include transition(all 1.5s ease-in-out);
+    position: absolute;
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center center;
-    // background-repeat: no-repeat;
-    background-image: url('http://placekitten.com/1200/800');
 
     &.blur {
+      @include transition(all 2.0s ease-in-out);
       filter: blur(10px) grayscale(100%);
     }
   }
 
-  .audio-player {
-    @extend %vertical-align;
-    background-color: transparentize(rgb(255,255,255),0.2);
+  div.wrapper {
+    height: 100%;
+  }
+
+  .photo-credit {
+    padding: 0.375em 0.25;
+    width: 100%;
+    font-size: .875em;
+    position: absolute;
+    bottom: 0;
+    background-color: transparentize(rgb(255,255,255),0.7);
+    text-align: right;
+
+    .name {
+      color: $nbn-purple;
+      font-weight: 700;
+    }
+
+    .year {
+      color: $nbn-purple
+    }
+
+    .credit {
+      font-weight: 300;
+    }
   }
 
 }

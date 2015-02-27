@@ -2,6 +2,10 @@
 $default-768: new-breakpoint(min-width 768px);
 $default-480: new-breakpoint(max-width 480px);
 
+$small: new-breakpoint(max-width em(400px));
+$medium: new-breakpoint(min-width em(400px) max-width em(750px));
+$large: new-breakpoint(min-width em(750px));
+
 // Colors
 $nbn-purple: rgb(80, 31, 132);
 $nbn-red: rgb(236, 56, 14);

@@ -1,0 +1,108 @@
+$arrow-width: 3em;
+
+.arrows {
+  position: fixed;
+  top: 48vh;
+  width: 100%;
+  z-index: 100;
+
+  a {
+    color: #FFF !important;
+    display: inline-block;
+    position: absolute;
+    transition: all .1s linear;
+  }
+
+  .previous {
+    left: 0;
+
+    div.icon {
+      left: 0;
+      float: right;
+    }
+  }
+
+  .next {
+    right: 0;
+
+    div.icon {
+      right: 0;
+      float: left;
+    }
+  }
+
+  div {
+    display: inline-block;
+    transition: background-color .1s linear;
+
+    &.icon {
+      background-color: transparentize($nbn-purple, .2);
+      font-weight: 700;
+      padding-bottom: 1em - em(1px);
+      padding-top: 1em;
+      text-align: center;
+      width: 3em;
+
+      @include media($small) {
+        display: block !important;
+      }
+    }
+  }
+
+  a:hover {
+    text-decoration: none;
+
+    div.icon {
+      background-color: transparentize($nbn-purple, 0);
+    }
+  }
+
+}
+
+.bottom-navigation {
+  display: block;
+}
+
+.next-story {
+  margin-top: 3em;
+  @include media($default-768) {
+    margin-top: 0;
+  }
+
+  background-color: transparentize($nbn-purple, .8);
+  border: $nbn-purple 2px solid;
+
+  a {
+    color: $bodytext-black;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  span.arrow {
+    margin-left: .125em;
+    transition: margin-left .1s linear;
+  }
+
+  &:hover {
+    background-color: transparentize($nbn-purple, .7);
+    span.arrow {
+      margin-left: .25em;
+    }
+  }
+
+  p {
+    padding: 10px;
+    padding-top: 0;
+    font-size: .875em;
+    font-weight: 300;
+
+    a {
+      color: inherit;
+      font-weight: 500;
+      display: inline;
+    }
+  }
+}

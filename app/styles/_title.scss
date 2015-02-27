@@ -1,5 +1,7 @@
 .slide.title {
-  @include linear-gradient(rgb(187,187,187), rgb(38,38,38));
+  // @include linear-gradient(rgb(187,187,187), rgb(38,38,38));
+  background-color: rgb(220,220,220);
+  color: rgb(101,101,101);
   height: initial;
   min-height: 100vh;
   padding: 1em;
@@ -46,14 +48,12 @@
 
   .prose {
     margin: 0 auto;
-    color: rgb(220,220,220);
     max-width: 660px;
   }
 
   .unicode {
     font-weight: 400;
-    color: rgb(220,220,220);
-    margin-right: 0.25em;
+    margin-right: 0.5em;
   }
 
   .definition {
@@ -79,17 +79,16 @@
     text-align: center;
     margin: 0 auto;
     text-transform: uppercase;
-    background-color: lighten($nbn-purple, 50%);
+    background-color: transparentize($nbn-purple, .4);
     padding: 0.125em 0.25em;
-    color: rgb(38,38,38);
+    color: rgb(220,220,220);
     font-weight: 600;
     margin-bottom: 6em;
-    font-size: 1.25em;
+    font-size: 1.375em;
 
     &:hover {
-      color: rgb(50,50,50);
       cursor: pointer;
-      background-color: lighten($nbn-purple, 40%);
+      background-color: transparentize($nbn-purple, .2);
     }
   }
 }
