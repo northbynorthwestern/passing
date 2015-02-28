@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- endbuild -->
+
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
@@ -42,16 +43,19 @@
       </a>
     </div>
 
-    <div class="audio-player">
-      <div id="jp_container" class="jp-audio">
-        <div class="controls">
-          <a href="javascript:;" class="play player-button" tabindex="1" title="play"><span class="icon-play"></span></a>
-          <a href="javascript:;" class="pause player-button" tabindex="1" style="display: none;" title="pause"><span class="icon-pause"></span></a>
-        </div>
-        <div class="photo-credit">
-          <span class="name">John Smith</span>
-          <span class="year">Freshman</span></br>
-          <span class="credit">Photographer / North by Northwestern</span>
+    <div class="player">
+      <div id="jp_container" class="jp-jplayer"></div>
+      <div id="audio-player" class="jp-audio">
+          <div class="gui">
+            <div class="controls">
+              <a href="javascript:;" class="play player-button" tabindex="1" title="play"><span class="icon-play">Play</span></a>
+              <a href="javascript:;" class="pause player-button" tabindex="1" style="display: none;" title="pause">Pause<span class="icon-pause"></span></a>
+            </div>
+            <div class="jp-progress-container"></div>
+            <div class="jp-progress-marker">
+              <span class="current-time"></span><span class="slash">/</span><span class="duration"></span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -64,9 +68,9 @@
         <h3 class="byline"><time>Feb. 22, 2015</time></h3>
         <p class="definition prose"><span class="unicode">\ˈpa:siŋ\</span>To be accepted as or believed to be, or to represent oneself successfully as, a member of an ethnic or religious group other than one's own, esp. one having higher social status; spec. (of a person of black ancestry in a racially segregated society) to be accepted as white.</p>
         <div class="prose">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae qui, sit a provident aliquam reiciendis? Accusantium dolorum ratione repellendus iusto consequatur quod magni nesciunt, explicabo eius praesentium pariatur. Sunt, a.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo perspiciatis autem facilis hic minima incidunt atque quidem soluta magni tempora! Magnam perferendis, consequatur quod neque aspernatur voluptatibus. Quaerat impedit alias autem labore accusamus dolor animi inventore vitae quod illo, deleniti, et maiores libero saepe, neque ea delectus laudantium mollitia quos consequuntur nulla accusantium ad incidunt. Minus assumenda tenetur incidunt! Cupiditate.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae qui, sit a provident aliquam reiciendis? Accusantium dolorum ratione repellendus iusto consequatur quod magni nesciunt, explicabo eius praesentium pariatur. Sunt, a.</p>
+          <p>Some people pass every once in a while, some every day, but there’s nothing new about it. The United States has a long history of racial passing. The stories that we have about it, even now, often have high stakes: allowing the privilege of passing as white in order to avoid discrimination and violence. Most famously in the American literary canon, there is the 1929 novel Passing by Nella Larsen, a book which centers around mixed race characters who pass as white. Even the 2004 movie White Chicks tackles passing, albeit in an unorthodox way.</p>
+          <p>Passing as white in the United States allows for innumerable advantages. Still, being a white person who is seen as such is not identical to being a person of color who experiences the same perception from others.</p>
+          <p>And there is no prerequisite criteria for passing. Yes, those who are mixed race can certainly pass, but monoracial individuals of color can, too. Those who are mixed race but are not of white descent can also pass. It varies - just like the stories of those who live that experience.</p>
         </div>
         <p class="headphones prose">Put on your headphones</p>
         <p class="begin">Begin</p>

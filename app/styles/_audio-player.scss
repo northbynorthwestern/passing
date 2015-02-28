@@ -1,4 +1,4 @@
-.audio-player {
+.player {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -6,3 +6,51 @@
   background-color: transparentize(rgb(255,255,255),0.2);
   z-index: 10
 }
+
+#audio-player {
+  height: 100%;
+  user-select: none;
+}
+
+#audio-player .gui {
+
+  height: 100%;
+  width: 100%;
+
+  .controls {
+    z-index: 10;
+    position: absolute;
+    height: 100%;
+  }
+
+  .controls a span {
+    width: 75px;
+    height: 75px;
+  }
+
+  .jp-progress-container {
+    background-color: transparentize($nbn-purple, 0.85);
+    width: 0%;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+  }
+
+  .jp-progress-marker {
+    position: absolute;
+    height: 100%;
+    border-left-color: $nbn-purple;
+    border-left-style: solid;
+    border-left-width: 1px;
+    font-size: .75em;
+    padding-left: 0.125em;
+
+    span {
+      display: inline-block;
+
+      &.current-time { font-weight: 200; }
+    }
+  }
+}
+
