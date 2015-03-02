@@ -30,14 +30,16 @@ Now let's take a look inside of `app/`:
 
 Please note – this guide assumes you are using OS X. If you aren't, you hopefully know the equivalent commands to make these things happen. If you don't, find someone to help you!
 
-First, clone this project:
+**1. Clone this project:**
 
 ```shell
 git clone git@github.com:northbynorthwestern/passing.git
 cd passing
 ```
 
-This project was built using [`generator-webapp`](https://github.com/yeoman/generator-webapp), so it requires you to have Node installed, as well as a few other things. **If you already have Node installed, along with Bower, Grunt, and Yeoman you can skip this step.** If you don't have those things installed, that's awesome — let's install them!
+**2. Install Requirements**
+
+This project was built using [`generator-webapp`](https://github.com/yeoman/generator-webapp), so it requires you to have Node installed, as well as a few other things. **If you already have Node installed, along with Bower, Grunt, Yeoman and Sass you can skip this step.** If you don't have those things installed, that's awesome — let's install them!
 
 To install Node, check out these [instructions by the NPR Visuals team](http://blog.apps.npr.org/2013/06/06/how-to-setup-a-developers-environment.html) to get started (it's Chapter 3 of that page, but you should really read the whole thing). Once you have Node installed, you can install the other dependencies by running these commands.
 
@@ -54,6 +56,7 @@ You'll also need to have [Sass](http://sass-lang.com/) installed. If you don't h
 ```shell
 sudo gem install sass
 ```
+**3. Install Project Dependencies**
 
 Once you have Node (and Bower and Grunt and Yeoman and Sass) installed (phew!), we can install the project's dependencies with this command:
 
@@ -62,6 +65,8 @@ npm install && bower install
 ```
 
 You should see two new folders in your project, `node_modules` and `bower_components` where these files have been installed.
+
+**4. Celebrate!**
 
 And that should be it! You're ready to run the app on your local machine.
 
