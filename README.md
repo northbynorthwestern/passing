@@ -4,7 +4,7 @@
 
 [*Passing*](http://apps.northbynorthwestern.com/passing/) was a project published by [North by Northwestern](http://northbynorthwester.com) on March 1, 2015. It explores the phenomenon of Racial Passing through the stories of four Northwestern students.
 
-These are the contents of this README:
+**These are the contents of this README:**
 
 * [What's in here?](#whats-in-here) — an introduction to the directories and files
 * [Getting Started](#getting-started) — how to boostrap the project
@@ -13,6 +13,12 @@ These are the contents of this README:
 
 
 #### What's in Here
+
+This app was scaffolded with the [`generator-webapp`](https://github.com/yeoman/generator-webapp) Yeoman generator. That generator creates a bunch of files, which can seem daunting and confusing. Hopefully this explains what the important things are and how it fits together.
+
+  * `package.json` — this tells [`npm`](https://www.npmjs.com/) (that's the Node Package Manager) how to manage the project's dependencies. When you run `npm install`, the dependencies will be downloaded into a folder titled `node_modules`.
+  * `bower.json` — this is like `package.json`, but it specifies the [Bower](http://bower.io/) dependencies. We use this to install things like Bourbon, Neat, jQuery, and jPlayer.
+  * `Gruntfile.js` — [Grunt](http://gruntjs.com/) is a Javascript task runner. This file tells Grunt how to automate the development and production of the project.
 
 ####Getting Started
 
