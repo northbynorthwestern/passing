@@ -20,7 +20,13 @@ This app was scaffolded with the [`generator-webapp`](https://github.com/yeoman/
   * `bower.json` — this is like `package.json`, but it specifies the [Bower](http://bower.io/) dependencies. We use this to install things like Bourbon, Neat, jQuery, and jPlayer.
   * `Gruntfile.js` — [Grunt](http://gruntjs.com/) is a Javascript task runner. This file tells Grunt how to automate the development and production of the project.
 
-####Getting Started
+Now let's take a look inside of `app/`:
+
+* `index.html` — this is the HTML file that powers the app. For this project, we just used a single HTML page, with no additional templates or frameworks.
+* `styles/main.scss` — this is the main Sass file that powers the project's stylesheet. It imports all of the other stylesheets in the folder, as well as Bourbon and Neat from the `bower_components` (this part happens because of [this part](https://github.com/northbynorthwestern/passing/blob/master/Gruntfile.js#L192-L202) of the Gruntfile). When the project is built, Grunt also [compiles the Sass](https://github.com/northbynorthwestern/passing/blob/master/Gruntfile.js#L152-L175) and autoprefixes the CSS.
+* `scripts/main.js` — the JavaScript file that creates most of the app's interactions.
+
+### Getting Started
 
 Please note – this guide assumes you are using OS X. If you aren't, you hopefully know the equivalent commands to make these things happen. If you don't, find someone to help you!
 
@@ -53,7 +59,7 @@ npm install && bower install
 
 And that should be it! You're ready to run the app on your local machine.
 
-#### Running the App
+### Running the App
 
 There are a few different terminal commands you can use build the app:
 
