@@ -23,7 +23,7 @@ This app was scaffolded with the [`generator-webapp`](https://github.com/yeoman/
 Now let's take a look inside of `app/`:
 
 * `index.html` — this is the HTML file that powers the app. For this project, we just used a single HTML page, with no additional templates or frameworks.
-* `styles/main.scss` — this is the main Sass file that powers the project's stylesheet. It imports all of the other stylesheets in the folder, as well as Bourbon and Neat from the `bower_components` (this part happens because of [this part](https://github.com/northbynorthwestern/passing/blob/master/Gruntfile.js#L192-L202) of the Gruntfile). When the project is built, Grunt also [compiles the Sass](https://github.com/northbynorthwestern/passing/blob/master/Gruntfile.js#L152-L175) and autoprefixes the CSS.
+* `styles/main.scss` — this is the main Sass file that powers the project's stylesheet. It imports all of the other stylesheets in the folder, as well as Bourbon and Neat from the `bower_components` (this happens because of [this part](https://github.com/northbynorthwestern/passing/blob/master/Gruntfile.js#L192-L202) of the Gruntfile). When the project is built, Grunt also [compiles the Sass](https://github.com/northbynorthwestern/passing/blob/master/Gruntfile.js#L152-L175) and autoprefixes the CSS.
 * `scripts/main.js` — the JavaScript file that creates most of the app's interactions.
 
 ### Getting Started
