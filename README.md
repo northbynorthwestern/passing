@@ -37,13 +37,17 @@ git clone git@github.com:northbynorthwestern/passing.git
 cd passing
 ```
 
-This project was built using [`generator-webapp`](https://github.com/yeoman/generator-webapp), so it requires you to have Node installed, as well as a few other things. **If you already have Node installed, along with Bower, Grunt, and Yeoman you can skip this step.** If you don't have those things installed, that's awesome — let's install them! To install Node, check out these [instructions by the NPR Visuals team](http://blog.apps.npr.org/2013/06/06/how-to-setup-a-developers-environment.html) to get started (it's Chapter 3 of that page, but you should really read the whole thing). Once you have Node installed, you can install the other dependencies by running these commands.
+This project was built using [`generator-webapp`](https://github.com/yeoman/generator-webapp), so it requires you to have Node installed, as well as a few other things. **If you already have Node installed, along with Bower, Grunt, and Yeoman you can skip this step.** If you don't have those things installed, that's awesome — let's install them!
+
+To install Node, check out these [instructions by the NPR Visuals team](http://blog.apps.npr.org/2013/06/06/how-to-setup-a-developers-environment.html) to get started (it's Chapter 3 of that page, but you should really read the whole thing). Once you have Node installed, you can install the other dependencies by running these commands.
 
 ```shell
 npm install -g bower
 npm install -g grunt-cli
 npm install -g yo
 ```
+
+**Note**: The `-g` means you are installing those modules globally on your machine, which means it doesn't matter which directory you are in. Contrast this command with a couple steps from now where we will use `npm install` without the global flag, because we are installing that project's local dependencies.
 
 You'll also need to have [Sass](http://sass-lang.com/) installed. If you don't have it installed, it's as simple as:
 
