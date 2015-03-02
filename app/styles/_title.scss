@@ -1,4 +1,5 @@
-.slide.title {
+.slide.title,
+.slide.final {
   // @include linear-gradient(rgb(187,187,187), rgb(38,38,38));
   background-color: rgb(220,220,220);
   color: rgb(101,101,101);
@@ -91,6 +92,52 @@
     &:hover {
       cursor: pointer;
       background-color: transparentize($nbn-purple, .2);
+    }
+  }
+}
+
+.final {
+  p {
+    margin: 0 auto;
+    @extend %prose;
+    text-align: center;
+    position: relative;
+    max-width: 425px;
+
+    .uppercase {
+      color: rgb(101,101,101);
+    }
+
+    .playfair {
+
+    }
+
+    &:first-of-type { margin-top: 20%; }
+
+    a.mixed-feelings {
+      color: $nbn-purple;
+      font-size: 3em;
+      font-family: "Playfair Display", serif;
+      font-weight: 900;
+      font-style: italic;
+      margin-top: 0em;
+      margin-bottom: 0.125em;
+      display: inline-block;
+
+      &:hover {
+        color: darken($nbn-purple, 10%)
+      }
+    }
+
+    &:last-of-type {
+      margin-top: 4em;
+      font-weight: 600;
+      a {
+        font-style: italic;
+        &:hover {
+          color: darken($nbn-purple, 10%)
+        }
+      }
     }
   }
 }

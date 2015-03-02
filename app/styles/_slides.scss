@@ -7,10 +7,10 @@
 
   display: none;
 
-  &#elvira .bg-img { background-image: url('/images/elvira_smaller.jpg');}
-  &#mande .bg-img { background-image: url('/images/mande_smaller.jpg');}
-  &#rachel .bg-img { background-image: url('/images/rachel_smaller.jpg');}
-  &#aaron .bg-img { background-image: url('/images/aaron_smaller.jpg');}
+  &#elvira .bg-img { background-image: url('../images/elvira_smaller.jpg');}
+  &#mande .bg-img { background-image: url('../images/mande_smaller.jpg');}
+  &#rachel .bg-img { background-image: url('../images/rachel_smaller.jpg');}
+  &#aaron .bg-img { background-image: url('../images/aaron_smaller.jpg');}
 
   &.active { display: block }
 

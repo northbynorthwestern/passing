@@ -47,8 +47,9 @@ $(document).ready(function() {
   currentTimePercent = 0;
   currentTimeText = '';
 
-  $arrows.hide();
-  $player.hide();
+
+  if ($active.hasClass('noaudio')) { $player.hide(); updateArrows(); }
+  if ($active.hasClass('title')) { $arrows.hide(); }
 
   $audioPlayer.jPlayer({
     ended: onAudioEnded,
@@ -121,7 +122,7 @@ $(document).ready(function() {
   $next.click(function() { $active = setActiveSlide(); });
 
   function hideOrShowAudioPlayer() {
-    if ($active.hasClass('title')) {
+    if ($active.hasClass('title') || $active.hasClass('final')) {
       $player.hide();
     } else {
       $player.show();
@@ -136,8 +137,9 @@ $(document).ready(function() {
     }
 
     if ($active.next().hasClass('slide')) {
+      $next.show();
     } else {
-      $('.arrow.next').hide();
+      $next.hide();
     }
 
     if ($active.hasClass('title')) {
@@ -154,13 +156,16 @@ $(document).ready(function() {
 
   function playActiveAudio() {
     var audioUrl = $active.data('audiourl');
-      $pause.show();
-      $play.hide();
+    console.log(audioUrl);
+    $pause.show();
+    $play.hide();
 
     if (audioUrl) {
       $audioPlayer.jPlayer('setMedia', {
         mp3: audioUrl
       }).jPlayer('play');
+    } else {
+      $audioPlayer.jPlayer('stop');
     }
   }
 
