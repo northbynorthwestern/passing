@@ -20,6 +20,7 @@ var $currentTime = null;
 var hovering = null;
 var currentTimeText = null;
 var currentTimePercent = null;
+var deblurred = null;
 
 $(document).ready(function() {
 
@@ -38,6 +39,7 @@ $(document).ready(function() {
   $duration = $('.duration');
   $currentTime = $('.current-time');
   hovering = false;
+  deblurred = false;
 
   $arrows = $('.arrows');
   $previous = $('.arrow.previous');
@@ -84,6 +86,7 @@ $(document).ready(function() {
   });
 
   function resetSlider() {
+    $currentTime.text(currentTimeText);
     $progressMarker.css({'left': currentTimePercent + '%'});
     $progressBar.removeClass('with-border');
     hovering = false;
@@ -101,6 +104,8 @@ $(document).ready(function() {
     }
 
     $active.addClass('active');
+
+    deblurred = false;
 
     hideOrShowAudioPlayer();
     updateArrows();
@@ -142,7 +147,10 @@ $(document).ready(function() {
     }
   }
 
-  function onAudioEnded() { deBlurActive(); }
+  function onAudioEnded() {
+    $pause.hide();
+    $play.show();
+  }
 
   function playActiveAudio() {
     var audioUrl = $active.data('audiourl');
@@ -196,6 +204,11 @@ $(document).ready(function() {
       $progressMarker.css({'left': percent + '%'});
       currentTimeText = $.jPlayer.convertTime(e.jPlayer.status.currentTime);
       $currentTime.text(currentTimeText);
+    }
+
+    if (currentTimePercent > 50 && !deblurred) {
+      deblurred = false;
+      deBlurActive();
     }
 
   }

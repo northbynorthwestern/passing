@@ -71,6 +71,8 @@
     font-weight: 700;
     font-size: .875em;
     text-align: center;
+
+    i { margin-right: 0.5em; }
   }
 
   .begin {
@@ -83,7 +85,7 @@
     padding: 0.125em 0.25em;
     color: rgb(220,220,220);
     font-weight: 600;
-    margin-bottom: 6em;
+    margin-bottom: 3em;
     font-size: 1.375em;
 
     &:hover {

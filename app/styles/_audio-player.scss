@@ -1,4 +1,5 @@
 .player {
+  overflow: hidden;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -46,8 +47,16 @@
     vertical-align: middle;
     font-size: 1.5em;
 
+    @include transition(color 0.1s ease-in-out);
+    @include transition(background-color 0.2s ease-in-out);
+
     &:hover {
       color: transparentize($bodytext-black, 0.1);
+      background-color: transparentize(lighten($bodytext-black, 30%), 0.2);
+    }
+
+    &:active {
+      background-color: transparentize(lighten($bodytext-black, 10%), 0.2);
     }
   }
 
@@ -67,13 +76,15 @@
   }
 
   .jp-progress-marker {
-    position: absolute;
+    position: relative;
     height: 100%;
     border-left-color: $nbn-purple;
     border-left-style: solid;
     border-left-width: 1px;
     font-size: .75em;
     padding-left: 0.125em;
+    z-index: 5;
+    overflow: hidden;
     @include transition(border 0.2s ease-in-out);
 
     span {
