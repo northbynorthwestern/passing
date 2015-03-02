@@ -2,7 +2,7 @@
 
 > **\ˈpa:siŋ\** To be accepted as or believed to be, or to represent oneself successfully as, a member of an ethnic or religious group other than one's own, esp. one having higher social status; spec. (of a person of black ancestry in a racially segregated society) to be accepted as white.
 
-*Passing* was a project published by [North by Northwestern](http://northbynorthwester.com) on March 1, 2015. It explores the phenomenon of Racial Passing through the stories of four Northwestern students.
+[*Passing*](http://apps.northbynorthwestern.com/passing/) was a project published by [North by Northwestern](http://northbynorthwester.com) on March 1, 2015. It explores the phenomenon of Racial Passing through the stories of four Northwestern students.
 
 ####Getting Started
 
