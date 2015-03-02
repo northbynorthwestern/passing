@@ -129,8 +129,8 @@
       }
     }
 
-    &:last-of-type {
-      margin-top: 4em;
+    &.nbn {
+      margin-top: 1.5em;
       font-weight: 600;
       a {
         font-style: italic;
@@ -138,6 +138,13 @@
           color: darken($nbn-purple, 10%)
         }
       }
+    }
+
+    &.note {
+      color: rgb(101,101,101);
+      font-size: 0.875em;
+      margin-top: 10em;
+      max-width: 660px;
     }
   }
 }

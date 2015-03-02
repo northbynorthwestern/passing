@@ -95,9 +95,17 @@ $(document).ready(function() {
 
   function setActiveSlide(direction) {
     if (direction === 'previous') {
-      $active = $active.prev();
+      if ($active.prev().hasClass('slide')) {
+        $active = $active.prev();
+      } else {
+        return $active;
+      }
     } else {
-      $active = $active.next();
+      if ($active.next().hasClass('slide')) {
+        $active = $active.next();
+      } else {
+        return $active;
+      }
     }
 
     for (var i = $slides.length - 1; i >= 0; i--) {
@@ -212,7 +220,7 @@ $(document).ready(function() {
     }
 
     if (currentTimePercent > 50 && !deblurred) {
-      deblurred = false;
+      deblurred = true;
       deBlurActive();
     }
 
