@@ -55,11 +55,13 @@ You'll also need to have [Sass](http://sass-lang.com/) installed. If you don't h
 sudo gem install sass
 ```
 
-Once you have Node (and Bower and Grunt and Yeoman and Sass) installed, we can install the project's dependencies with this command:
+Once you have Node (and Bower and Grunt and Yeoman and Sass) installed (phew!), we can install the project's dependencies with this command:
 
 ```shell
 npm install && bower install
 ```
+
+You should see two new folders in your project, `node_modules` and `bower_components` where these files have been installed.
 
 And that should be it! You're ready to run the app on your local machine.
 
