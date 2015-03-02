@@ -7,8 +7,8 @@ Please note – this guide assumes you are using OS X. If you aren't, you hopefu
 First, clone this project:
 
 ```shell
-git clone git@github.com:northbynorthwestern/nbn-elections.git
-cd nbn-elections
+git clone git@github.com:northbynorthwestern/passing.git
+cd passing
 ```
 
 Then install the dependencies:
