@@ -4,10 +4,12 @@
 
 [*Passing*](http://apps.northbynorthwestern.com/passing/) was a project published by [North by Northwestern](http://northbynorthwester.com) on March 1, 2015. It explores the phenomenon of Racial Passing through the stories of four Northwestern students.
 
-* [What's in here?](#whats-in-here)
-* [Getting Started](#getting-started)
-* [Running the App](#whats-in-here)
-* [Learning More](#bootstrap-the-project)
+These are the contents of this README:
+
+* [What's in here?](#whats-in-here) — an introduction to the directories and files
+* [Getting Started](#getting-started) — how to boostrap the project
+* [Running the App](#whats-in-here) — how to run the project
+* [Learning More](#bootstrap-the-project) — links to more resources
 
 
 #### What's in Here
